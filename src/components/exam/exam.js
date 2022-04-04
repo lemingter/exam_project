@@ -122,14 +122,14 @@ class Exam extends Component {
         return (
             <div>
                 <p>
-                    <button value={0} onClick={this.playing}><img src={Piedra} /></button>
-                    <button value={1} onClick={this.playing}><img src={Papel} /></button>
-                    <button value={2} onClick={this.playing}><img src={Tijeras} /></button>
+                    <button value={0} onClick={this.playing}><img alt = "piedra" src={Piedra} /></button>
+                    <button value={1} onClick={this.playing}><img alt = "Papel" src={Papel} /></button>
+                    <button value={2} onClick={this.playing}><img alt = "Tijera" src={Tijeras} /></button>
                 </p>
                 <p>
-                    <img id="playerChoice" src={Piedra} />
+                    <img alt = "PlayerChoice" id="playerChoice" src={Piedra} />
                     <h2> VS </h2>
-                    <img id="machineChoice" src={Piedra} />
+                    <img alt = "PlayerChoice" id="machineChoice" src={Piedra} />
                 </p>
                 <p>Marcador:</p>
                 <p>{this.state.wins} - {this.state.loses}</p>
