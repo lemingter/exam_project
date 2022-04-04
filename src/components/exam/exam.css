@@ -6,3 +6,7 @@ h1 {
     font-family: Monaco;
     color: lightcoral;
 }
+
+h2 {
+    display: inline;
+}
