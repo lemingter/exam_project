@@ -1,23 +1,18 @@
-import logo from '../shared/images/logo.svg';
+import Header from '../shared/layout/Header';
 import './App.css';
+import Footer from '../shared/layout/Footer';
+import Content from '../shared/layout/Content';
+import Exam from './Exam/Exam';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header title="Mi App" url="http://github.com" />
+      <Content>
+        <Exam />
+      </Content>
+      
+      <Footer />
     </div>
   );
 }
